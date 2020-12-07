@@ -102,6 +102,9 @@
 )]
 #![no_std]
 
+// ANDROID: Unconditionally use std to allow building as a dylib.
+extern crate std;
+
 /// A wrapper around `&'a [u8]` that helps in writing panic-free code.
 ///
 /// No methods of `Input` will ever panic.
