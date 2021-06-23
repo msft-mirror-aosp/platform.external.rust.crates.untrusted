@@ -27,6 +27,7 @@ rust_library {
     edition: "2018",
     apex_available: [
         "//apex_available:platform",
+        "com.android.compos",
         "com.android.resolv",
     ],
     min_sdk_version: "29",
