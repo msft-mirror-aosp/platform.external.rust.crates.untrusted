@@ -9,20 +9,17 @@
     },
     {
       "path": "external/rust/crates/webpki"
+    },
+    {
+      "path": "packages/modules/DnsResolver"
     }
   ],
   "presubmit": [
-    {
-      "name": "doh_unit_test"
-    },
     {
       "name": "untrusted_test_tests_tests"
     }
   ],
   "presubmit-rust": [
-    {
-      "name": "doh_unit_test"
-    },
     {
       "name": "untrusted_test_tests_tests"
     }
