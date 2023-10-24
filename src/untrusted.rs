@@ -105,7 +105,8 @@
 #![allow(rustdoc::bare_urls)]
 #![no_std]
 
-// ANDROID: Unconditionally use std to allow building as a dylib.
+// ANDROID: use std to allow building as a dylib.
+#[cfg(android_dylib)]
 extern crate std;
 
 /// A wrapper around `&'a [u8]` that helps in writing panic-free code.
