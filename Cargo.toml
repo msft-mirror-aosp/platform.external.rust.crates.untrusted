@@ -27,3 +27,6 @@ lto = true
 [lib]
 name = "untrusted"
 path = "src/untrusted.rs"
+
+[lints.rust]
+unexpected_cfgs = { level = "warn", check-cfg = ['cfg(android_dylib)'] }
